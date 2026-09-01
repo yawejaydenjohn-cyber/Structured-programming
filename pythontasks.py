@@ -41,15 +41,15 @@ print()  # The 2 empty print functions are for spacing the work in the command p
 # is eligible for insurance or not.
 
 maritalstatus=input("Enter marital status M/U:") # M-married, U-unmarried
-gender=input("Enter your gender M/F:") # Ma-male, F-female
+gender=input("Enter your gender M/F:") # M-male, F-female
 age=int(input("Enter your age:"))
 if maritalstatus=="M":
     print("Congratulations")
     print("You are eligible for insurance")
-else:
- print("Sorry you are not eligible for insurance")
-if age>30 and  maritalstatus=="U" and gender=="Ma":
+if age>30 and  maritalstatus=="U" and gender=="M":
     print("Congratulations you are eligible for insurance")
 if age>25 and gender=="F" and maritalstatus=="U":
-    print("Congratulations you are eligible for insurance")   
+    print("Congratulations you are eligible for insurance")
+else:
+    print("You are not eligible for insurance")
 
